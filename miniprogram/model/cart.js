@@ -11,7 +11,7 @@ const cart = {
 
   },
   getNum: function() {
-
+    return 0;
   },
   num: function(sno, n) {
 

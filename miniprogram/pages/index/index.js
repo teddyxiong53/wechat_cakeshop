@@ -15,5 +15,11 @@ Page({
     }
     wx.swithTab({ url: '../cake/cake' });
   },
-  
+  goDetail: function(e) {
+    var nm = e.currentTarget.dataset.pname;
+    var b = e.currentTarget.dataset.brand;
+    wx.navigateTo({
+      url: '../cakeDetail/cakeDetail?pname=' + nm + "&brand=" + (b||0)
+    })
+  }
 })

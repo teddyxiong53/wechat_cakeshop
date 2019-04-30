@@ -40,6 +40,12 @@ Page({
       "list": _list
     })
   },
+  changeTab: function(e) {
+    var d = e.currentTarget.dataset.index;
+    this.setData({
+      tab: d
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

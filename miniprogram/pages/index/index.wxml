@@ -15,9 +15,17 @@
   <image class='mg-2' src="{{path + '001.png'}}" style="width:400rpx;"></image>
 </view>
 
-<view class='m' data-pname='莱茵河莓妖精' data-brand="0">
-  <image class='mg-1' src="{{path + '002.jpg'}}"></image>
-  <image class='mg-2' src="{{path + '002.png'}}" style="width:400rpx;"></image>
+<!-- 下面的吉致系列的 -->
+<view class='m' bindtap="goCake" data-band="1">
+  <image class='mg' src="{{path+'jz.jpg'}}"></image>
+</view>
+
+<view class='m' data-pname='吉致泡芙' data-brand="1" catchtap='goDetail'>
+  <image class='mg-3' src="{{path + 'j001.jpg'}}"></image>
+</view>
+
+<view class='m' data-pname='吉致牛轧糖(巴旦木味)' data-brand="1" catchtap='goDetail'>
+  <image class='mg-3' src="{{path + 'j002.jpg'}}"></image>
 </view>
 
 
