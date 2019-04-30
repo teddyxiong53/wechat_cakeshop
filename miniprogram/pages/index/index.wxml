@@ -8,7 +8,7 @@
   <image class='mg' src="{{path+'jd.jpg'}}"></image>
 </view>
 <!-- brand为0，表示经典系列 -->
-<view class='m' data-pname='极地牛乳' data-brand="0">
+<view class='m' data-pname='极地牛乳' data-brand="0" catchtap='goDetail'>
   <!-- 001.jpg是产品图片 -->
   <!-- 001.png是价格和名字，这个也是图片来呈现的。 -->
   <image class='mg-1' src="{{path + '001.jpg'}}"></image>

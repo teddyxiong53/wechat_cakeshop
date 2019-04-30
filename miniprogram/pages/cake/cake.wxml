@@ -1,2 +1,49 @@
-<!--pages/cake/cake.wxml-->
-<text>pages/cake/cake.wxml</text>
+<view class='tab'>
+  <view class="{{tab==0?'tab-on':'tab-out'}}" data-index="0" catchtap='changeTab'>经典系列</view>
+  <view class="{{tab==1?'tab-on':'tab-out'}}" data-index="1" catchtap='changeTab'>吉致系列</view>
+</view>
+<view class='tab-layer'></view>
+<!-- 经典系列 -->
+<view wx:if="{{tab==0}}">
+  <view wx:for="{{list}}" wx:key="name" wx:for-item="p">
+    <view>
+      <!-- 左边图片 -->
+      <image src="{{p.imgUrl}}"></image>
+      <!-- 右边文字 -->
+      <view>
+        <!-- 名字 -->
+        <view class='nm'>{{p.name}}</view>
+        <!-- 描述 -->
+        <view class='des'>{{p.des}}</view>
+        <!-- 价格 -->
+        <view class='sub'>
+        ￥ <text>{{p.price}}</text>
+        </view>
+
+      </view>
+      
+    </view>
+  </view>
+</view>
+<!-- 吉致系列 -->
+<view wx:if="{{tab==0}}">
+  <view wx:for="{{list}}" wx:key="name" wx:for-item="p">
+    <view>
+      <!-- 左边图片 -->
+      <image src="{{p.imgUrl}}"></image>
+      <!-- 右边文字 -->
+      <view>
+        <!-- 名字 -->
+        <view class='nm'>{{p.name}}</view>
+        <!-- 描述 -->
+        <view class='des'>{{p.des}}</view>
+        <!-- 价格 -->
+        <view class='sub'>
+        ￥ <text>{{p.price}}</text>
+        </view>
+
+      </view>
+      
+    </view>
+  </view>
+</view>

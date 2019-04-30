@@ -5,10 +5,10 @@ const version = {
 
 const path = {
   res: "https://res.bestcake.com/",
-  www: "https://mcstj.bestcake.com"
+  www: "https://mcstj.bestcake.com/"
 }
 
-const cityArray = ['北京','上海','广州','深圳']
+const cityArray = ['上海', '北京', '杭州', '宁波']
 
 const city = {
 
@@ -19,5 +19,5 @@ module.exports = {
   path,
   city,
   cityArray,
-  
+
 }

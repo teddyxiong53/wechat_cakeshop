@@ -24,5 +24,34 @@
     "navigationBarTitleText": "云开发 QuickStart",
     "navigationBarTextStyle": "black"
   },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "icon/home-1.png",
+        "selectedIconPath": "icon/home-2.png"
+      },
+      {
+        "pagePath": "pages/cake/cake",
+        "text": "蛋糕馆",
+        "iconPath": "icon/cake-1.png",
+        "selectedIconPath": "icon/cake-2.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "icon/cart-1.png",
+        "selectedIconPath": "icon/cart-2.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "icon/my-1.png",
+        "selectedIconPath": "icon/my-2.png"
+      }
+
+    ]
+  },
   "sitemapLocation": "sitemap.json"
 }

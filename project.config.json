@@ -2,15 +2,17 @@
 	"miniprogramRoot": "miniprogram/",
 	"cloudfunctionRoot": "cloudfunctions/",
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
-		"newFeature": true
+		"newFeature": true,
+		"autoAudits": false,
+		"checkInvalidKey": true
 	},
-	"appid": "wx099d9dc74dce0fb7",
+	"appid": "wx0c96628ac4fe7505",
 	"projectname": "cakeshop",
-	"libVersion": "2.2.5",
+	"libVersion": "2.6.6",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
 	"condition": {

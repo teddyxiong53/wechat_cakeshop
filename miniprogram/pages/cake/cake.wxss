@@ -1,1 +1,42 @@
-/* pages/cake/cake.wxss */
+page {
+  padding: 55px 0 0 ;
+  background-color: #f3f3f3;
+
+}
+.tab {
+  width: 720rpx;
+  position: fixed;
+  z-index: 100;
+  left: 14rpx;
+  top: 10rpx;
+  border: 1rpx solid #555;
+  border-radius: 5px;
+  height: 40px;
+  line-height: 40px;
+  display: flex;
+  font-size: 13pt;
+}
+
+.tab-layer {
+  width: 750rpx;
+  height: 50px;
+  background: #fff;
+  opacity: 0.9;
+  left: 0;
+  top: 0;
+  position: fixed;
+  z-index: 99;
+  border-bottom: 1rpx solid #dedede;
+}
+
+.tab .tab-on {
+  flex: 1;
+  text-align: center;
+  background-color: #555;
+  color: #fff;
+}
+.tab .tab-out {
+  flex: 1;
+  text-align: center;
+  
+}
