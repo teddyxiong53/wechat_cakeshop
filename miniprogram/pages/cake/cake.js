@@ -46,6 +46,15 @@ Page({
       tab: d
     })
   },
+  goDetail: function(e) {
+    var d = e.currentTarget.dataset.pname;
+    var b = e.currentTarget.dataset.brand;
+    if(d) {
+      wx.navigateTo({
+        url: '../cakeDetail/cakeDetail?pname=' + d + '&brand=' + b,
+      })
+    }
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -64,13 +73,13 @@ Page({
     for (var i in dic) {
       _jzList.push({
         name: i,
-        price: dic[i],
+        price: dic[i].CakeType[0].CurrentPrice + ".00",
         des: dic[i].Means,
         imgUrl: app.path.res + dic[i].img
       });
       list.push({
         name: i,
-        price: dic[i],
+        price: dic[i].CakeType[0].CurrentPrice + ".00",
         des: dic[i].Means,
         imgUrl: app.path.res + dic[i].img
       });

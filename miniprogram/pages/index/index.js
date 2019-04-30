@@ -21,5 +21,10 @@ Page({
     wx.navigateTo({
       url: '../cakeDetail/cakeDetail?pname=' + nm + "&brand=" + (b||0)
     })
+  },
+  bindPickerChange: function(e) {
+    this.setData({
+      index: e.detail.value
+    })
   }
 })
