@@ -12,6 +12,7 @@ const cake = {
   }
 }
 
-module.exports = {
-  cake
-}
+// module.exports = {
+//   cake
+// }
+module.exports = cake;

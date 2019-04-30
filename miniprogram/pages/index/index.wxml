@@ -1,0 +1,23 @@
+<picker bindchange='bindPickerChange' value="{{index}}" range="{{array}}">
+  <view class='cityselect'>
+    {{array[index]}}
+  </view>
+</picker>
+<view class='m' bindtap="goCake" data-band="0">
+  <!-- jd是经典的拼音缩写 -->
+  <image class='mg' src="{{path+'jd.jpg'}}"></image>
+</view>
+<!-- brand为0，表示经典系列 -->
+<view class='m' data-pname='极地牛乳' data-brand="0">
+  <!-- 001.jpg是产品图片 -->
+  <!-- 001.png是价格和名字，这个也是图片来呈现的。 -->
+  <image class='mg-1' src="{{path + '001.jpg'}}"></image>
+  <image class='mg-2' src="{{path + '001.png'}}" style="width:400rpx;"></image>
+</view>
+
+<view class='m' data-pname='莱茵河莓妖精' data-brand="0">
+  <image class='mg-1' src="{{path + '002.jpg'}}"></image>
+  <image class='mg-2' src="{{path + '002.png'}}" style="width:400rpx;"></image>
+</view>
+
+

@@ -1,16 +1,16 @@
 const config = require("./common/config.js")
-const user = require("./model/user.js").user
-const cart = require("./model/cart.js").cart
-const cake = require("./model/cake.js").cake
+const user = require("./model/user.js")
+const cart = require("./model/cart.js")
+const cake = require("./model/cake.js")
 
 App({
   version: config.version,
   user: user,
   cart: cart,
   cake: cake,
-
+  
   onLaunch: function () {
-    
+    //console.log(this.cake);
     if (!wx.cloud) {
       console.error('请使用 2.2.3 或以上的基础库以使用云能力')
     } else {
@@ -31,12 +31,19 @@ App({
       _this.user.levels = obj.levels;
       _this.user.headimg = obj.headimg;
     }
-    this.globalData = {}
+    
   },
+  onLoad: function() {
+
+  },
+  onShow: function() {
+
+  },
+  onHide: function() {
+
+  },
+
   globalData: {
     userInfo: null
   },
-  onShow: function() {
-    var obj = this.user.getCache();
-  }
 })
