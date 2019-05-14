@@ -1,2 +1,44 @@
-<!--pages/cakeDetail/cakeDetail.wxml-->
-<text>pages/cakeDetail/cakeDetail.wxml</text>
+<view wx:if="{{loaded}}" class='c'>
+  <!-- 主体部分 -->
+  <view>
+    <!-- 图片轮播 -->
+    <swiper indicator-dots='true' autoplay='false' current='0' circular='false' duration='400' class='hd'>
+      <block wx:for="{{imgMinList}}" wx:for-item="url" wx:key="*this">
+        <swiper-item data-index="{{index}}" catchtap="previewImg">
+          <image src="{{url}}" class='slide-image'></image>
+        </swiper-item>
+      </block>
+    </swiper>
+    <!-- 标题 -->
+    <view class='tit'>{{name}}</view>
+    <!-- 描述 -->
+    <view class='des'>{{des}}</view>
+    <!-- 价格 -->
+    <view class='pp'>
+      ￥
+      <view class='price'>
+        <text>{{(current.price*num)+".00"}}</text>
+      </view>
+    </view>
+    <!-- 数量 -->
+    <view class='size' >
+      <view class="sitem {{current.size==s.size? 'sitem-on' : 'sitem-out'}}" data-supplyno="{{s.SupplyNo}}" data-size="{{s.Size}}" data-price="{{s.CurrentPrice}}" catchtap='changeCurrent' wx:for="{{CakeType}}" wx:for-item="s" wx:key="Id">
+        <text>{{s.Size}}</text>
+      </view>
+    </view>
+    <!-- 主要原料 -->
+    <view class='sm'>
+      主要原料：
+      <text>{{resource}}</text>
+    </view>
+    <!-- 贮存调节 -->
+    <view class='sm'>
+      <text>{{fresh}}</text>
+    </view>
+  </view>
+  <!-- 2个按钮部分，底栏 -->
+  <view class='tool'>
+    <view class='tbtn add' catchtap='addCart'>加入购物车</view>
+    <view class='tbtn buy' catchtap='_go'>购买</view>
+  </view>
+</view>

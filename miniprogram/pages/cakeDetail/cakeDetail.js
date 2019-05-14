@@ -18,6 +18,15 @@ Page({
       title: d.Name,
     })
     this.setData({
+      imgMinList: (function() {
+        var _list = [];
+        if(_this.data.brand ==  0) {
+
+        } else {
+          _list.push(app.path.res + "images/ksk/item/w_400/" + d.Name + ".jpg");
+        }
+        return _list;
+      })(),
       name: d.Name,
       num: 1,
       des: d.Means,
@@ -65,6 +74,10 @@ Page({
         loaded: true
       })
     }
+  },
+  previewImg: function(e) {
+    //preview.show(this.data)
+    console.log("preview image")
   },
 
   /**

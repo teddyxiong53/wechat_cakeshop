@@ -1,1 +1,33 @@
-/* pages/cakeDetail/cakeDetail.wxss */
+/* 整个页面容器 */
+.c { padding: 0 0 80px;}
+
+  /* 头部 */
+  .hd {height: 500rpx; background-color: #fff; }
+    /* 头部图片 */
+    .hd image {width: 750rpx; height: 500rpx;}
+  /* 标题 */
+  .tit {font-size: 17pt; font-weight: bold; }
+  /* 描述 */
+  .des {font-size: 10pt; line-height: 22px; padding: 0 35rpx 20rpx; color: #999}
+  /* 价格外层盒子 */
+  .pp {padding: 20rpx; color: #ff6a00; border-top: 1px solid #eee; display: flex}
+    /* ￥符号 */
+    .price {flex: 1}
+    /* 价格数字 */
+    .price text {font-size: 23pt;font-weight: bold;}
+  /* size */
+  .size {display: flex; padding: 20rpx 15rpx 30rpx; border-bottom: 1rpx solid #eee;}
+  .size .sitem {flex: 1; text-align: center; padding: 0 15rpx; max-width: 400rpx;}
+  .size .sitem text {height: 40px; line-height: 40px; display: block; border-radius: 2px;}
+  .size .sitem-on text {border: 2rpx solid #576b95; }
+  .size .sitem-out text {border: 2rpx solid #ddd;}
+
+  .sm {padding: 20px 35rpx 0; font-size: 10pt; line-height: 22px;}
+  .sm text {color: #999;}
+
+  /* 下面的按钮栏 */
+  .tool {position: fixed; left: 0; bottom: 0; padding: 20rpx 0; display: flex; width: 750rpx; border-top: 1rpx solid #ddd; box-shadow: 0 -1px 5px 0 #eee; background-color: #fff;}
+    /* 按钮的共同风格 */
+    .tool .tbtn {height: 40px; line-height: 40px; text-align: center; border-radius: 3px;}
+    .tool .add {background-color: #f0f0f0; border: 1rpx solid #ddd; flex:1; margin: 0 10rpx 0 20rpx;  position: relative;}
+    .tool .buy {background-color: #576b95; flex: 1;border: 1rpx solid #576b95; color: #fff;}
